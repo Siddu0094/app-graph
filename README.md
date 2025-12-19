@@ -142,10 +142,16 @@ src/
 
 ## Deployment
 
-The application can be deployed to:
-- **Vercel**: Connect GitHub repo, Vite framework auto-detected
-- **Cloudflare Pages**: Use Vite build command
-- **Netlify**: Configure build command as `npm run build`
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+**Quick Deploy Options:**
+
+- **Vercel** (Recommended): Connect GitHub repo, auto-detects Vite
+- **Netlify**: Connect GitHub repo, uses `netlify.toml` config
+- **Cloudflare Pages**: Connect GitHub repo, auto-detects Vite
+- **Docker**: Use included `Dockerfile` for containerized deployment
+- **GitHub Pages**: Uses GitHub Actions workflow (`.github/workflows/deploy.yml`)
 
 Build output is in the `dist/` directory after running `npm run build`.
+
 
